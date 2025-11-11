@@ -11,6 +11,7 @@
 
 <body>
     <div class="container-fluid">
+        <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 custom-navbar">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,11 +26,12 @@
                             <a class="nav-link" href="#about-me">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href=".timeline-header">Experiences</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-form">Say Hello</a>
                         </li>
+                        
                         <li class = "nav-item d-flex align-items-center social-icons ml-lg-3">
                             <!-- Contact Info -->
                             <a class="social-link" href="https://www.linkedin.com/in/siyi-ji" target="_blank">
@@ -54,24 +56,100 @@
     
     <main>
         <section>
+            <!-- My Photo -->
             <div class = "row">
                 <div id="Siyi-image" class="col-md-4">
                     <img src="image/siyi_photo.JPG" class="img-fluid" alt="Siyi's Photo">
                 </div>
-
+            <!-- About Me -->
                 <div id="about-me" class="col-md-8">
                     <h2>About me</h2>
                     <p>
                         <span class="single-line">I am a Software Engineer in Training at Techtonica.</span>
+                        <br>
+                        
                     </p>
                 </div>
             </div>
         </section>
-        <section>
-            <div id="projects">
-                <h2>Projects</h2>
+            <!-- My Experiences -->
+        <section class="timeline container">
+            <div class="timeline-header text-center">
+                <h2>My experiences</h2>
             </div>
+
+            <!-- Techtonica -->
+            <div class="row timeline-entry align-items-center">
+                <div class="work-left col-md-4 col-12 mb-2">
+                    <h3 class="company">
+                        <a href="https://techtonica.org/" target="_blank">Techtonica</a>
+                    </h3>
+                        <span class="timeline type-secondary">2025.09–Present</span>
+                </div>
+
+                <div class="work-right col-md-8 col-12 mb-2">
+                    <h3 class="work-title">
+                        Software Engineering in Training
+                    </h3>
+                    <p class="description">  
+                        Six month of full-time, hands-on, project based, collaborative software engineering learning with a focus on full-stack JavaScript.
+                    </p>
+                    <h4>
+                        Projects
+                    </h4>
+                    <ul id="project">
+                        <li>
+                            <a href="https://github.com/sylviajsy/techtonica-assignments/tree/Phase4/recipe-page" target="_blank">Recipe Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Truinity Software -->
+            <div class="timeline-entry row align-items-center">
+                <div class="work-left col-md-4 col-12 mb-2">
+                    <h3 class="company">
+                        <a href="#" target="_blank">Truinity Software</a>
+                    </h3>
+                        <span class="timeline-entry type-secondary">2022.05–2025.05</span>
+                </div>
+
+                <div class="work-right col-md-8 col-12 mb-2">
+                    <h3 class="work-title">
+                        Data Analyst
+                    </h3>
+                    <p class="description">  
+                        As a Data Analyst, I focused on automating the end-to-end wake-word testing pipeline using Python, SQL, and Power BI.
+                        <br><br>
+                        I integrated ETL processes and Data Dashboards to visualize test metrics like pass rate and error rate, aligned analytics standards across five teams, and delivered trend analyses that improved quality-assurance throughput and customer satisfaction by over 30%.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Transamerica -->
+            <div class="timeline-entry row align-items-center">
+                <div class="work-left col-md-4 col-12 mb-2">
+                    <h3 class="company">
+                        <a href="https://www.transamerica.com/" target="_blank">Transamerica</a>
+                    </h3>
+                        <span class="timeline-entry type-secondary">2021.09–2022.04</span>
+                </div>
+
+                <div class="work-right col-md-8 col-12 mb-2">
+                    <h3 class="work-title">
+                        Data Analyst
+                    </h3>
+                    <p class="description">  
+                        At Transamerica, I worked as a Data Analyst developing automated dashboards and risk analysis models to support financial decision-making.
+                        <br><br>
+                        I engineered SQL-based data pipelines that extracted, cleaned, and integrated multi-source datasets into Tableau dashboards used by business and actuarial teams. By implementing Python scripts for data validation and statistical modeling, I streamlined recurring reporting workflows and improved data accuracy by 25%.
+                    </p>
+                </div>
+                
+            </div>
+
         </section>
+
         <section id="contact-form">
             <h2>Say Hello!</h2>
             <p>Tell me about yourself</p>
@@ -82,7 +160,7 @@
     </main>
     <footer>
 		<div class="footers">	
-		    <p>You can follow me on Linkedin or Github. I read every email. </p>
+		    <p>You can follow me on <a href="https://www.linkedin.com/in/siyi-ji" target="_blank">Linkedin</a> or <a href="https://github.com/sylviajsy" target="_blank">Github</a>. I read every <a href="mailto:sylviajsyy@gmail.com">email</a>. </p>
 		</div>
 	</footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

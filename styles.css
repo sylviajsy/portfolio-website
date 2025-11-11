@@ -3,3 +3,9 @@
   gap: 20px;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .timeline-entry {
+    flex-direction: column;
+  }
+}
