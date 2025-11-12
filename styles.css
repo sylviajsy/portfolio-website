@@ -30,6 +30,11 @@ mark{
   align-items: center;
 }
 
+#searchbtn{
+  color: #fff;
+  background-color: #f06292;
+}
+
 /* About me */
 #about-me {
   background-color: rgba(255, 255, 255, 0.75);
@@ -163,5 +168,11 @@ mark{
 @media (max-width: 768px) {
   .timeline-entry {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  body{
+    background: linear-gradient(to bottom, #f1e4fb 0%, #e4d1f8 50%, #d1b3f0 100%);
   }
 }
