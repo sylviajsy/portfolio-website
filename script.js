@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!found){alert(`No Match found for "${query}"`);}
             newInput.value = "";
     });
+    
     // Modal Window
     const modal = document.getElementById("contactModal");
     const contactbtn = document.getElementById("contact-btn");
