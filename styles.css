@@ -5,6 +5,10 @@ body {
   padding-top: 80px;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 h1, h2 {
   font-family: 'Space Mono', sans-serif;
   color: #000;
@@ -50,7 +54,6 @@ h3 {
 }
 
 .timeline-entry:hover{
-  display: inline-block;
   transform: scale(1.03);
   transition: transform 0.3s ease;
 }
@@ -66,7 +69,6 @@ h3 {
   font-family: 'Momo Trust Display', sans-serif;
 }
 
-/* Contact form */
 #submitbtn {
   display: block;
   background-color: #f06292;
