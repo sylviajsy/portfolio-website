@@ -68,7 +68,16 @@ h3 {
 
 /* Contact form */
 #submitbtn {
-  
+  display: block;
+  background-color: #f06292;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin: 20px auto;
+}
+
+#submitbtn:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
