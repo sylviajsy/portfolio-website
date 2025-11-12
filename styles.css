@@ -1,11 +1,29 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #F9E1DC 0%, #F7C9D4 50%, #F5E4EC 100%);
+  color: #000;
+  margin: 0;
+  padding-top: 80px;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Mono', sans-serif;
+  color: #000;
+  letter-spacing: 1px;
+}
+
 .social-icons {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .timeline-entry {
-    flex-direction: column;
-  }
+#about-me {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 6px solid #d48fa3;
 }
+
