@@ -80,6 +80,11 @@ h3 {
   transform: scale(1.05);
 }
 
+/* Footer */
+#footers {
+  font-family: 'Momo Trust Display', sans-serif;
+}
+
 @media (max-width: 768px) {
   .timeline-entry {
     flex-direction: column;
