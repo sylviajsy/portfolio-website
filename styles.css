@@ -27,3 +27,8 @@ h1, h2, h3 {
   border-left: 6px solid #d48fa3;
 }
 
+@media (max-width: 768px) {
+  .timeline-entry {
+    flex-direction: column;
+  }
+}
