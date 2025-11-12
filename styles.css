@@ -39,7 +39,21 @@ h3 {
 }
 
 /* Experiences */
+.timeline-entry {
+  background: rgba(255, 182, 193, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 8px 25px rgba(255, 182, 193, 0.25);
+  backdrop-filter: blur(12px);
+}
 
+.timeline-entry:hover{
+  display: inline-block;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
 /* Contact form */
 
 @media (max-width: 768px) {
