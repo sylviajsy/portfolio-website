@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #F9E1DC 0%, #F7C9D4 50%, #F5E4EC 100%);
+  background: linear-gradient(to bottom, #fbe4e6 0%, #f8d8e1 50%, #f0c9d1 100%);
   color: #000;
   padding-top: 80px;
 }
@@ -54,7 +54,22 @@ h3 {
   transform: scale(1.03);
   transition: transform 0.3s ease;
 }
+
+.timeline-entry .company a {
+  color: #f06292;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.timeline-entry #project a {
+  color: #f06292;
+  font-family: 'Momo Trust Display', sans-serif;
+}
+
 /* Contact form */
+#submitbtn {
+  
+}
 
 @media (max-width: 768px) {
   .timeline-entry {
