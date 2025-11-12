@@ -19,6 +19,10 @@ h3 {
   color: #000;
 }
 
+mark{
+  background-color: #f06292;
+}
+
 /* Nav Bar */
 .social-icons {
   display: flex;
