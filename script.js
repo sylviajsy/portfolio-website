@@ -62,5 +62,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     sections[current].scrollIntoView({ behavior: "smooth" });
 
-});
+    });
+
+    // Git counters
+    const counters = document.querySelectorAll('.git-counter-number');
+
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'), 10);
+        let start = 0;
+        const duration = 1500;
+        const startTime = performance.now();
+
+        function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(progress * target);
+        counter.textContent = value;
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            counter.textContent = target;
+        }
+        }
+
+        requestAnimationFrame(update);
+    });
 });
