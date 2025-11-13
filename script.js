@@ -38,10 +38,29 @@ document.addEventListener("DOMContentLoaded", function() {
     modal.style.display = "none";
     }
 
-        // When the user clicks anywhere outside of the modal, close it
+    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
     }
+
+    // Scroll to each section more obvious
+    const sections = document.querySelectorAll(".scroll-container");
+    let current = 0;
+    let isScrolling = false;
+
+    window.addEventListener("wheel", (e) => {
+    if (isScrolling) return;
+    isScrolling = true;
+
+    if (e.deltaY > 0 && current < sections.length - 1) {
+        current++;
+    } else if (e.deltaY < 0 && current > 0) {
+        current--;
+    }
+
+    sections[current].scrollIntoView({ behavior: "smooth" });
+
+});
 });
