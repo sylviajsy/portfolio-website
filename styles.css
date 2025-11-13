@@ -9,7 +9,13 @@ section {
   scroll-margin-top: 100px;
 }
 
-h1, h2 {
+h1 {
+  font-family: 'Space Mono', sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+h2 {
   font-family: 'Space Mono', sans-serif;
   color: #000;
 }
