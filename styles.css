@@ -5,6 +5,29 @@ body {
   padding-top: 80px;
 }
 
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.scroll-container > * {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px; 
+    box-sizing: border-box;
+}
+
+/* Override .scroll-container, My experience part is over one page */
+#timeline {
+    display: block;
+    overflow-y: auto; 
+}
+
 section {
   scroll-margin-top: 100px;
 }
