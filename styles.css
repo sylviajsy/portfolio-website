@@ -105,6 +105,40 @@ mark{
   font-family: 'Momo Trust Display', sans-serif;
 }
 
+#project-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 25px;
+  padding: 10px;
+}
+
+.project-card{
+  background: rgba(255, 210, 220, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+}
+
+.project-card .card-img-top {
+  width: 80%;
+  height: auto;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  background: white;
+}
+
+.btn-view-outline {
+  background: transparent;
+  border-radius: 10px;
+  color:#f06292;
+  border: 2px solid #f06292;
+  padding: 10px 16px;
+}
+
 #submitbtn {
   display: block;
   background-color: #f06292;
@@ -112,6 +146,11 @@ mark{
   border-radius: 10px;
   padding: 10px 25px;
   margin: 20px auto;
+}
+
+.project-card:hover{
+  transform: scale(1.05);
+  text-decoration: none;
 }
 
 #submitbtn:hover {
