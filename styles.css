@@ -56,9 +56,10 @@ mark{
   align-items: center;
 }
 
-#searchbtn{
-  color: #fff;
-  background-color: #f06292;
+.nav-item.active {
+  color: #f06292;
+  font-weight: 700;
+  border-bottom: 2px solid #f06292;
 }
 
 /* Header */
