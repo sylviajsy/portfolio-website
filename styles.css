@@ -89,7 +89,6 @@ mark{
   border-radius: 50%;
   border: 4px solid white;
   position: relative;
-  z-index: 2;
 }
 
 @keyframes spin {
