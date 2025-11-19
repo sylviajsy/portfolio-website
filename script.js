@@ -33,6 +33,36 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+        // Restrictions for modal window
+    modal.addEventListener("submit", function (event) {
+        
+        const modalName = document.getElementById("modal-name").value.trim();
+        const modalEmail = document.getElementById("modal-email").value.trim();
+        const modalPhone = document.getElementById("modal-phoneNumber").value.trim();
+
+        // email needs @ and .
+        if (!modalEmail.includes("@") || !modalEmail.includes(".")) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return;
+        }
+
+        // Name
+        if (modalName.length > 30) {
+            alert("Name cannot exceed 30 characters.");
+            event.preventDefault();
+            return;
+        }
+
+        // Phone number
+        if (modalPhone !="" && !modalPhone.match(/^\d{10}$/)) {
+            alert("Phone number must be exactly 10 digits.");
+            event.preventDefault();
+            return;
+        }
+
+    })
+
     // Scroll to each section more obvious
     const sections = document.querySelectorAll(".scroll-container");
     let current = 0;
@@ -75,4 +105,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
         requestAnimationFrame(update);
     });
+
+    // Contact form Requirements
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (event) {
+        
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phoneNumber").value.trim();
+
+        // email needs @ and .
+        if (!email.includes("@") || !email.includes(".")) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return;
+        }
+
+        // Name
+        if (name.length > 30) {
+            alert("Name cannot exceed 30 characters.");
+            event.preventDefault();
+            return;
+        }
+
+        // Phone number
+        if (phone !="" && !phone.match(/^\d{10}$/)) {
+            alert("Phone number must be exactly 10 digits.");
+            event.preventDefault();
+            return;
+        }
+
+    })
 });
