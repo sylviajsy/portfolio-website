@@ -50,6 +50,10 @@ mark{
 }
 
 /* Nav Bar */
+.navbar{
+  background-color: #f8d8e1;
+  opacity: 1
+}
 .social-icons {
   display: flex;
   gap: 20px;
