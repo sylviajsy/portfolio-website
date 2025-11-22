@@ -116,7 +116,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const phone = document.getElementById("phoneNumber").value.trim();
 
         // email needs @ and .
-        if (!email.includes("@") || !email.includes(".")) {
+        const dotIndex = email.lastIndexOf(".");
+        if (!email.includes("@") || dotIndex == email.length-3) {
             alert("Please enter a valid email address.");
             event.preventDefault();
             return;
